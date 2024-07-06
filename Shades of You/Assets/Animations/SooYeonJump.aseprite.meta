@@ -123,16 +123,316 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: SooYeonJump_Frame_0
     originalName: 
-    pivot: {x: 0.5263158, y: 0}
+    pivot: {x: 0.5416667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 103
+      width: 24
+      height: 28
+    spriteID: de6ccbf67ccc4d34eab2f3f17e656ffd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 103}
+  - name: SooYeonJump_Frame_1
+    originalName: 
+    pivot: {x: 0.5652174, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 23
+      height: 25
+    spriteID: b6616b5017a3d5b41aedd889cb05e93b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: SooYeonJump_Frame_2
+    originalName: 
+    pivot: {x: 0.5769231, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 199
+      width: 26
+      height: 23
+    spriteID: d2d3e54fe53b02a46ae7dbd042d22397
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 199}
+  - name: SooYeonJump_Frame_3
+    originalName: 
+    pivot: {x: 0.55172414, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 170
+      width: 29
+      height: 21
+    spriteID: 446dc2bf54304bc4b98a9c5017d2af07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 170}
+  - name: SooYeonJump_Frame_4
+    originalName: 
+    pivot: {x: 0.5925926, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 230
+      width: 27
+      height: 21
+    spriteID: 763acf2c2be609d49833c40e6686e334
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 230}
+  - name: SooYeonJump_Frame_5
+    originalName: 
+    pivot: {x: 0.6666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 197
+      width: 24
+      height: 20
+    spriteID: 0c619648272a5bf4c878bba7cb93a3fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 197}
+  - name: SooYeonJump_Frame_6
+    originalName: 
+    pivot: {x: 0.64, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 77
+      width: 25
+      height: 23
+    spriteID: 66c2b5803522798468f7cbf376bbe776
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 77}
+  - name: SooYeonJump_Frame_7
+    originalName: 
+    pivot: {x: 0.5714286, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 34
+      width: 28
+      height: 25
+    spriteID: 5de2faec67c99384caf93eb08b7ca6e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 34}
+  - name: SooYeonJump_Frame_8
+    originalName: 
+    pivot: {x: 0.5714286, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 139
+      width: 28
+      height: 23
+    spriteID: 1246764dbe6f7ff43af41f4ee795b1a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 139}
+  - name: SooYeonJump_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 167
+      width: 24
+      height: 22
+    spriteID: d421b178a1c4eff418733722b448f07c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 167}
+  - name: SooYeonJump_Frame_10
+    originalName: 
+    pivot: {x: 0.43478262, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 225
+      width: 23
+      height: 20
+    spriteID: a6b2594c70f9d154089f3601350aa100
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 225}
+  - name: SooYeonJump_Frame_11
+    originalName: 
+    pivot: {x: 0.5185185, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 139
+      width: 27
+      height: 20
+    spriteID: a23e085e46df5a24380d9f556563c0c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 139}
+  - name: SooYeonJump_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 4
+      width: 32
+      height: 16
+    spriteID: 8735efa250ea7ee45aac8b388fa7df31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 4}
+  - name: SooYeonJump_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 4
+      width: 32
+      height: 22
+    spriteID: c3f48673e0f858b409dbf3d2797719b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 4}
+  - name: SooYeonJump_Frame_14
+    originalName: 
+    pivot: {x: 0.48, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 67
+      width: 25
+      height: 28
+    spriteID: 4ebcedd23b5a3984a852d1651a27a742
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 67}
+  - name: SooYeonJump_Frame_15
+    originalName: 
+    pivot: {x: 0.5555556, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 19
-      height: 20
-    spriteID: 7c92cf6bed6103142bdc3967ab574a42
+      width: 27
+      height: 32
+    spriteID: a1d39a1052512d94aaf099ccb09e2e7b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,318 +441,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: SooYeonJump_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 170
-      width: 18
-      height: 20
-    spriteID: 4e7d9378d6ba0bb4f84d0d18cfa80eb0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 170}
-  - name: SooYeonJump_Frame_2
-    originalName: 
-    pivot: {x: 0.5294118, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 32
-      width: 17
-      height: 20
-    spriteID: a775e32dcaa2630498d5bc306050e001
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 32}
-  - name: SooYeonJump_Frame_3
-    originalName: 
-    pivot: {x: 0.35, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 4
-      width: 20
-      height: 19
-    spriteID: f861026cc6739c84d8a830917a3d6c34
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 4}
-  - name: SooYeonJump_Frame_4
-    originalName: 
-    pivot: {x: 0.5294118, y: -0.05263158}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 88
-      width: 17
-      height: 19
-    spriteID: 2fc7c3afb4525ab4681b82d3cc1b58f6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 88}
-  - name: SooYeonJump_Frame_5
-    originalName: 
-    pivot: {x: 0.5, y: -0.11111111}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 169
-      width: 16
-      height: 18
-    spriteID: d7abb5b06cf09c845b5c2b7d6cb4da07
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 169}
-  - name: SooYeonJump_Frame_6
-    originalName: 
-    pivot: {x: 0.47058824, y: -0.10526316}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 115
-      width: 17
-      height: 19
-    spriteID: 75eeede887c576e449095e9e4d712d9d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 115}
-  - name: SooYeonJump_Frame_7
-    originalName: 
-    pivot: {x: 0.33333334, y: -0.1904762}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 141
-      width: 18
-      height: 21
-    spriteID: 0f90f9c1eea938f49a7c6ebbcecc57ad
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 141}
-  - name: SooYeonJump_Frame_8
-    originalName: 
-    pivot: {x: 0.29411766, y: -0.21052632}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 142
-      width: 17
-      height: 19
-    spriteID: bd7a68da0b9030a42a50185049f5514b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 142}
-  - name: SooYeonJump_Frame_9
-    originalName: 
-    pivot: {x: 0.29411766, y: -0.1}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 60
-      width: 17
-      height: 20
-    spriteID: 9dabdcf5a91258c46bac4ef5710a6638
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 60}
-  - name: SooYeonJump_Frame_10
-    originalName: 
-    pivot: {x: 0.2777778, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 198
-      width: 18
-      height: 20
-    spriteID: ff46c37539aeb5c479b196cc9a7cdb27
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 198}
-  - name: SooYeonJump_Frame_11
-    originalName: 
-    pivot: {x: 0.35, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 31
-      width: 20
-      height: 19
-    spriteID: 7ad61f3f363704a419b2ac26514e8232
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 31}
-  - name: SooYeonJump_Frame_12
-    originalName: 
-    pivot: {x: 0.35, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 59
-      y: 4
-      width: 20
-      height: 16
-    spriteID: 9446fdfc105f8ed40b24a7c196bf1f81
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 59, y: 4}
-  - name: SooYeonJump_Frame_13
-    originalName: 
-    pivot: {x: 0.2777778, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 226
-      width: 18
-      height: 20
-    spriteID: 2661ee7664f544244a1be69945383074
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 226}
-  - name: SooYeonJump_Frame_14
-    originalName: 
-    pivot: {x: 0.35, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 58
-      width: 20
-      height: 19
-    spriteID: 922b72c2957f58b44b87bdf9b76405d9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 58}
-  - name: SooYeonJump_Frame_15
-    originalName: 
-    pivot: {x: 0.42105263, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 85
-      width: 19
-      height: 20
-    spriteID: f967c6e6562f03c46afeba71d6e4822e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 85}
   - name: SooYeonJump_Frame_16
     originalName: 
-    pivot: {x: 0.5263158, y: 0}
+    pivot: {x: 0.52, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 31
-      y: 113
-      width: 19
-      height: 20
-    spriteID: 130b83f62e072224ea20950557de9afc
+      x: 4
+      y: 108
+      width: 25
+      height: 23
+    spriteID: e81c30948560ba448b306cd22ef9d138
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -460,7 +460,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 31, y: 113}
+    uvTransform: {x: 4, y: 108}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -473,139 +473,139 @@ ScriptedImporter:
     - name: SooYeonJump_Frame_0
       frameIndex: 0
       cellRect:
-        x: 6
+        x: 3
         y: 0
-        width: 19
-        height: 20
-      spriteId: 7c92cf6bed6103142bdc3967ab574a42
+        width: 24
+        height: 28
+      spriteId: de6ccbf67ccc4d34eab2f3f17e656ffd
     - name: SooYeonJump_Frame_1
       frameIndex: 1
       cellRect:
-        x: 7
+        x: 3
         y: 0
-        width: 18
-        height: 20
-      spriteId: 4e7d9378d6ba0bb4f84d0d18cfa80eb0
+        width: 23
+        height: 25
+      spriteId: b6616b5017a3d5b41aedd889cb05e93b
     - name: SooYeonJump_Frame_2
       frameIndex: 2
       cellRect:
-        x: 7
+        x: 1
         y: 0
-        width: 17
-        height: 20
-      spriteId: a775e32dcaa2630498d5bc306050e001
+        width: 26
+        height: 23
+      spriteId: d2d3e54fe53b02a46ae7dbd042d22397
     - name: SooYeonJump_Frame_3
       frameIndex: 3
       cellRect:
-        x: 9
+        x: 0
         y: 0
-        width: 20
-        height: 19
-      spriteId: f861026cc6739c84d8a830917a3d6c34
+        width: 29
+        height: 21
+      spriteId: 446dc2bf54304bc4b98a9c5017d2af07
     - name: SooYeonJump_Frame_4
       frameIndex: 4
       cellRect:
-        x: 7
-        y: 1
-        width: 17
-        height: 19
-      spriteId: 2fc7c3afb4525ab4681b82d3cc1b58f6
+        x: 0
+        y: 0
+        width: 27
+        height: 21
+      spriteId: 763acf2c2be609d49833c40e6686e334
     - name: SooYeonJump_Frame_5
       frameIndex: 5
       cellRect:
-        x: 8
-        y: 2
-        width: 16
-        height: 18
-      spriteId: d7abb5b06cf09c845b5c2b7d6cb4da07
+        x: 0
+        y: 0
+        width: 24
+        height: 20
+      spriteId: 0c619648272a5bf4c878bba7cb93a3fc
     - name: SooYeonJump_Frame_6
       frameIndex: 6
       cellRect:
-        x: 8
-        y: 2
-        width: 17
-        height: 19
-      spriteId: 75eeede887c576e449095e9e4d712d9d
+        x: 0
+        y: 0
+        width: 25
+        height: 23
+      spriteId: 66c2b5803522798468f7cbf376bbe776
     - name: SooYeonJump_Frame_7
       frameIndex: 7
       cellRect:
-        x: 10
-        y: 4
-        width: 18
-        height: 21
-      spriteId: 0f90f9c1eea938f49a7c6ebbcecc57ad
+        x: 0
+        y: 0
+        width: 28
+        height: 25
+      spriteId: 5de2faec67c99384caf93eb08b7ca6e6
     - name: SooYeonJump_Frame_8
       frameIndex: 8
       cellRect:
-        x: 11
-        y: 4
-        width: 17
-        height: 19
-      spriteId: bd7a68da0b9030a42a50185049f5514b
+        x: 0
+        y: 0
+        width: 28
+        height: 23
+      spriteId: 1246764dbe6f7ff43af41f4ee795b1a2
     - name: SooYeonJump_Frame_9
       frameIndex: 9
       cellRect:
-        x: 11
-        y: 2
-        width: 17
-        height: 20
-      spriteId: 9dabdcf5a91258c46bac4ef5710a6638
+        x: 4
+        y: 0
+        width: 24
+        height: 22
+      spriteId: d421b178a1c4eff418733722b448f07c
     - name: SooYeonJump_Frame_10
       frameIndex: 10
       cellRect:
-        x: 11
+        x: 6
         y: 0
-        width: 18
+        width: 23
         height: 20
-      spriteId: ff46c37539aeb5c479b196cc9a7cdb27
+      spriteId: a6b2594c70f9d154089f3601350aa100
     - name: SooYeonJump_Frame_11
       frameIndex: 11
       cellRect:
-        x: 9
+        x: 2
         y: 0
-        width: 20
-        height: 19
-      spriteId: 7ad61f3f363704a419b2ac26514e8232
+        width: 27
+        height: 20
+      spriteId: a23e085e46df5a24380d9f556563c0c7
     - name: SooYeonJump_Frame_12
       frameIndex: 12
       cellRect:
-        x: 9
+        x: 0
         y: 0
-        width: 20
+        width: 32
         height: 16
-      spriteId: 9446fdfc105f8ed40b24a7c196bf1f81
+      spriteId: 8735efa250ea7ee45aac8b388fa7df31
     - name: SooYeonJump_Frame_13
       frameIndex: 13
       cellRect:
-        x: 11
+        x: 0
         y: 0
-        width: 18
-        height: 20
-      spriteId: 2661ee7664f544244a1be69945383074
+        width: 32
+        height: 22
+      spriteId: c3f48673e0f858b409dbf3d2797719b7
     - name: SooYeonJump_Frame_14
       frameIndex: 14
       cellRect:
-        x: 9
+        x: 4
         y: 0
-        width: 20
-        height: 19
-      spriteId: 922b72c2957f58b44b87bdf9b76405d9
+        width: 25
+        height: 28
+      spriteId: 4ebcedd23b5a3984a852d1651a27a742
     - name: SooYeonJump_Frame_15
       frameIndex: 15
       cellRect:
-        x: 8
+        x: 1
         y: 0
-        width: 19
-        height: 20
-      spriteId: f967c6e6562f03c46afeba71d6e4822e
+        width: 27
+        height: 32
+      spriteId: a1d39a1052512d94aaf099ccb09e2e7b
     - name: SooYeonJump_Frame_16
       frameIndex: 16
       cellRect:
-        x: 6
+        x: 3
         y: 0
-        width: 19
-        height: 20
-      spriteId: 130b83f62e072224ea20950557de9afc
+        width: 25
+        height: 23
+      spriteId: e81c30948560ba448b306cd22ef9d138
     linkedCells: []
     parentIndex: -1
   platformSettings: []

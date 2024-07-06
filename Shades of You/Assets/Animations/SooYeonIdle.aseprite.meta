@@ -123,16 +123,16 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: SooYeonIdle_Frame_0
     originalName: 
-    pivot: {x: 0.5263158, y: 0}
+    pivot: {x: 0.5416667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 93
-      width: 19
-      height: 20
-    spriteID: 9c59b6de374eb2d4d8c62746c8fc0848
+      x: 78
+      y: 4
+      width: 24
+      height: 28
+    spriteID: 0ebe9c656635e84439cdf58876b9c9ab
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,19 +140,79 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 93}
+    uvTransform: {x: 78, y: 4}
   - name: SooYeonIdle_Frame_1
     originalName: 
-    pivot: {x: 0.5263158, y: 0}
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 82
+      width: 24
+      height: 29
+    spriteID: 922f27bd716ff654887e455205a2f031
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 82}
+  - name: SooYeonIdle_Frame_2
+    originalName: 
+    pivot: {x: 0.61538464, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 43
+      width: 26
+      height: 31
+    spriteID: f8d6844991c65884eb9f6478eab1ac3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 43}
+  - name: SooYeonIdle_Frame_3
+    originalName: 
+    pivot: {x: 0.5714286, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 83
+      width: 28
+      height: 32
+    spriteID: 393d38b9d1f7cf6469138b2d156d19bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 83}
+  - name: SooYeonIdle_Frame_4
+    originalName: 
+    pivot: {x: 0.53333336, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 19
-      height: 22
-    spriteID: bffc29d68be5dc049ac9b94988db7107
+      width: 30
+      height: 32
+    spriteID: 82e8e3d100e01ee43bdaa4b797f0c56a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,78 +221,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: SooYeonIdle_Frame_2
-    originalName: 
-    pivot: {x: 0.5263158, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 34
-      width: 19
-      height: 22
-    spriteID: e872f9c2a2e3a3c46a9517d99ab28562
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 34}
-  - name: SooYeonIdle_Frame_3
-    originalName: 
-    pivot: {x: 0.5263158, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 64
-      width: 19
-      height: 21
-    spriteID: 79c414612c82067409e9b5a33db7d66d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 64}
-  - name: SooYeonIdle_Frame_4
-    originalName: 
-    pivot: {x: 0.5263158, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 4
-      width: 19
-      height: 20
-    spriteID: 1455ec485dfde344096e72596fd4e33e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 4}
   - name: SooYeonIdle_Frame_5
     originalName: 
-    pivot: {x: 0.5263158, y: 0}
+    pivot: {x: 0.46428573, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 31
-      y: 60
-      width: 19
-      height: 19
-    spriteID: 63f4ebfd25a3c3c48b42c394e13f689c
+      x: 42
+      y: 4
+      width: 28
+      height: 31
+    spriteID: abbcd0e33d61ed249a5f95492acb0fe7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,19 +240,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 31, y: 60}
+    uvTransform: {x: 42, y: 4}
   - name: SooYeonIdle_Frame_6
     originalName: 
-    pivot: {x: 0.5263158, y: 0}
+    pivot: {x: 0.4827586, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 31
-      y: 87
-      width: 19
-      height: 19
-    spriteID: 22bd3253237574548b88562be7f15684
+      x: 4
+      y: 44
+      width: 29
+      height: 31
+    spriteID: 49210e82298556c4aa85248b9e996d0b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -260,19 +260,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 31, y: 87}
+    uvTransform: {x: 4, y: 44}
   - name: SooYeonIdle_Frame_7
     originalName: 
-    pivot: {x: 0.5263158, y: 0}
+    pivot: {x: 0.5652174, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 31
-      y: 32
-      width: 19
-      height: 20
-    spriteID: 3f5a2b2873e875e4f907057f8daf18db
+      x: 78
+      y: 40
+      width: 23
+      height: 24
+    spriteID: 35f8ad8d4fa9b504cb3d8894994cd917
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,7 +280,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 31, y: 32}
+    uvTransform: {x: 78, y: 40}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -293,67 +293,67 @@ ScriptedImporter:
     - name: SooYeonIdle_Frame_0
       frameIndex: 0
       cellRect:
-        x: 6
+        x: 3
         y: 0
-        width: 19
-        height: 20
-      spriteId: 9c59b6de374eb2d4d8c62746c8fc0848
+        width: 24
+        height: 28
+      spriteId: 0ebe9c656635e84439cdf58876b9c9ab
     - name: SooYeonIdle_Frame_1
       frameIndex: 1
       cellRect:
-        x: 6
+        x: 2
         y: 0
-        width: 19
-        height: 22
-      spriteId: bffc29d68be5dc049ac9b94988db7107
+        width: 24
+        height: 29
+      spriteId: 922f27bd716ff654887e455205a2f031
     - name: SooYeonIdle_Frame_2
       frameIndex: 2
       cellRect:
-        x: 6
+        x: 0
         y: 0
-        width: 19
-        height: 22
-      spriteId: e872f9c2a2e3a3c46a9517d99ab28562
+        width: 26
+        height: 31
+      spriteId: f8d6844991c65884eb9f6478eab1ac3c
     - name: SooYeonIdle_Frame_3
       frameIndex: 3
       cellRect:
-        x: 6
+        x: 0
         y: 0
-        width: 19
-        height: 21
-      spriteId: 79c414612c82067409e9b5a33db7d66d
+        width: 28
+        height: 32
+      spriteId: 393d38b9d1f7cf6469138b2d156d19bb
     - name: SooYeonIdle_Frame_4
       frameIndex: 4
       cellRect:
-        x: 6
+        x: 0
         y: 0
-        width: 19
-        height: 20
-      spriteId: 1455ec485dfde344096e72596fd4e33e
+        width: 30
+        height: 32
+      spriteId: 82e8e3d100e01ee43bdaa4b797f0c56a
     - name: SooYeonIdle_Frame_5
       frameIndex: 5
       cellRect:
-        x: 6
+        x: 3
         y: 0
-        width: 19
-        height: 19
-      spriteId: 63f4ebfd25a3c3c48b42c394e13f689c
+        width: 28
+        height: 31
+      spriteId: abbcd0e33d61ed249a5f95492acb0fe7
     - name: SooYeonIdle_Frame_6
       frameIndex: 6
       cellRect:
-        x: 6
+        x: 2
         y: 0
-        width: 19
-        height: 19
-      spriteId: 22bd3253237574548b88562be7f15684
+        width: 29
+        height: 31
+      spriteId: 49210e82298556c4aa85248b9e996d0b
     - name: SooYeonIdle_Frame_7
       frameIndex: 7
       cellRect:
-        x: 6
+        x: 3
         y: 0
-        width: 19
-        height: 20
-      spriteId: 3f5a2b2873e875e4f907057f8daf18db
+        width: 23
+        height: 24
+      spriteId: 35f8ad8d4fa9b504cb3d8894994cd917
     linkedCells: []
     parentIndex: -1
   platformSettings: []
