@@ -5,12 +5,24 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement Variables")]
     public float speed = 10.0f;
     public float jumpForce = 5.0f;
-    private bool isJumping = false;
+    public bool isJumping = false;
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private PlayerController controls;
+
+    [Header("Ground Check")]
+    public Transform groundCheck;
+    public float checkRadius;
+    public bool isGrounded;
+
+    [Header("Animation Variables")]
+    public bool isFacingRight = false;
+
+    [Header("Camera Follow")]
+    public CameraFollow _cameraFollow;
 
     private void Awake()
     {
@@ -21,25 +33,41 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        _cameraFollow = _cameraFollow.GetComponent<CameraFollow>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Collider2D groundContact = Physics2D.OverlapCircle(groundCheck.position, checkRadius);
+        if (groundContact != null)
+        {
+            isGrounded = groundContact.gameObject.CompareTag("Ground");
+            if (isGrounded)
+            {
+                isJumping = false;
+            }
+        }
+        else
+        {
+            isGrounded = false;
+        }
+
         moveInput = controls.Move.Move.ReadValue<Vector2>();
 
         rb.velocity = new Vector2(moveInput.x * speed, rb.velocity.y);
 
-        if (!isJumping && moveInput.y > 0)
+        if (!isJumping && moveInput.y > 0 && isGrounded)
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             isJumping = true;
         }
+    }
 
-        if (isJumping && moveInput.y == 0)
-        {
-            isJumping = false;
-        }
+    private void FixedUpdate()
+    {
+        TurnCheck();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -58,5 +86,37 @@ public class PlayerMovement : MonoBehaviour
     private void OnDisable()
     {
         controls.Move.Disable();
+    }
+
+    private void TurnCheck()
+    {
+        if (moveInput.x > 0 && !isFacingRight)
+        {
+            Turn();
+        }
+        else if (moveInput.x < 0 && isFacingRight)
+        {
+            Turn();
+        }
+    }
+
+    private void Turn()
+    {
+        if (isFacingRight)
+        {
+            Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.z);    
+            transform.rotation = Quaternion.Euler(rotator);
+            isFacingRight = false;
+
+            _cameraFollow.CallTurn();
+        }
+        else
+        {
+            Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
+            transform.rotation = Quaternion.Euler(rotator);
+            isFacingRight = true;
+
+            _cameraFollow.CallTurn();
+        }
     }
 }
