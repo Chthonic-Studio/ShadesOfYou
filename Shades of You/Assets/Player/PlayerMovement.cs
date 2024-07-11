@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Camera Follow")]
     public CameraFollow _cameraFollow;
 
+    private float _fallSpeedYDampingChangeThreshold;
+
     private void Awake()
     {
         controls = new PlayerController();
@@ -35,11 +37,14 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         _cameraFollow = _cameraFollow.GetComponent<CameraFollow>();
+
+        _fallSpeedYDampingChangeThreshold = CameraManager.instance._fallSpeedYDampingChangeThreshold;
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Jumping Logic NEEDS FIXING
         Collider2D groundContact = Physics2D.OverlapCircle(groundCheck.position, checkRadius);
         if (groundContact != null)
         {
@@ -62,6 +67,30 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             isJumping = true;
+        }
+
+        // END OF JUMPING LOGIC
+
+        // Camera damping while jumping
+
+        //If falling pas a certain speed threshold
+
+        if (rb.velocity.y < _fallSpeedYDampingChangeThreshold && !CameraManager.instance.IsLerpingYDamping && !CameraManager.instance.LerpedFromPlayerFalling)
+        {
+            CameraManager.instance.LerpYDamping(true);
+        }
+
+        // If standing still or moving
+
+        if (rb.velocity.y >= 0f && CameraManager.instance.IsLerpingYDamping && CameraManager.instance.LerpedFromPlayerFalling)
+        {
+            CameraManager.instance.LerpYDamping(false);
+
+            CameraManager.instance.LerpedFromPlayerFalling = false;
+        }
+        else
+        {
+            CameraManager.instance.LerpYDamping(false);
         }
     }
 
