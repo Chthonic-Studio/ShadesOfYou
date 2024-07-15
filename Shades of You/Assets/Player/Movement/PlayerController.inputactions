@@ -2,7 +2,7 @@
     "name": "PlayerController",
     "maps": [
         {
-            "name": "Move",
+            "name": "Player",
             "id": "e307dbcc-eeb7-4227-95a7-4d654b596469",
             "actions": [
                 {
@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Talk",
+                    "name": "Ability",
                     "type": "Button",
                     "id": "ed10a39e-fcf9-4f6d-a9e1-691d26b7b9f9",
                     "expectedControlType": "Button",
@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Ability",
+                    "name": "Jump",
                     "type": "Button",
                     "id": "7951e0ea-9c11-4df1-91ac-e9fe3368d3c1",
                     "expectedControlType": "Button",
@@ -59,7 +59,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Talk",
+                    "action": "Ability",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -180,7 +180,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Ability",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1c8b3b54-551e-41c9-bd65-096882b8cecd",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

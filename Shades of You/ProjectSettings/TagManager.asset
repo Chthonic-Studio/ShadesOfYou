@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - Water
   - UI
   - Lights
-  - 
-  - 
+  - Ground
+  - Player
   - 
   - 
   - 
@@ -74,4 +75,7 @@ TagManager:
     locked: 0
   - name: Deco2
     uniqueID: 2355054631
+    locked: 0
+  - name: FrontLayer
+    uniqueID: 3110624555
     locked: 0

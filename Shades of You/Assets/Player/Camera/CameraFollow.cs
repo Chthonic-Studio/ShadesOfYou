@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour
     {
         _player = _playerTransform.gameObject.GetComponent<PlayerMovement>();
 
-        _isFacingRight = _player.isFacingRight;
+        _isFacingRight = _player._isFacingRight;
     }
 
     private void Update()
