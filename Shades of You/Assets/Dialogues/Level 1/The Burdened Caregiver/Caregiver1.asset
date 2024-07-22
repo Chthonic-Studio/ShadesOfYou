@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1a62368a3d4b47b2e6683fc373965, type: 3}
+  m_Name: Caregiver1
+  m_EditorClassIdentifier: 
+  dialogueType: 0
+  actor: {fileID: 11400000, guid: e652a36560cb3094694249f990fb83cc, type: 2}
+  text: "I couldn't... I couldn't save them. It's my fault... \nI should have done
+    more."
+  specificCharacter: 0
+  specificCharacterChoice: 0
+  continuation: {fileID: 11400000, guid: ad9e14076294c7246bfb7526b022ef92, type: 2}
+  dialogueEnd: 0
+  choices: []
+  finishesQuest: 0
+  questNPC: {fileID: 0}

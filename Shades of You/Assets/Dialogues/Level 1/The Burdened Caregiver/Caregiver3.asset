@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1a62368a3d4b47b2e6683fc373965, type: 3}
+  m_Name: Caregiver3
+  m_EditorClassIdentifier: 
+  dialogueType: 0
+  actor: {fileID: 11400000, guid: e652a36560cb3094694249f990fb83cc, type: 2}
+  text: 'She needed me. I wasn''t there. I wasn''t... strong enough.
+
+    Can you
+    tell her I''m sorry? I can''t face her.'
+  specificCharacter: 0
+  specificCharacterChoice: 0
+  continuation: {fileID: 11400000, guid: 59a08661426db734ea16208e35e9b53d, type: 2}
+  dialogueEnd: 0
+  choices: []
+  finishesQuest: 0
+  questNPC: {fileID: 0}

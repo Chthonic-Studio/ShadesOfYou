@@ -14,6 +14,7 @@ public class MovingPlatform : MonoBehaviour
     private int currentWaypointIndex = 0;
     private int direction = 1;
     private Tween movementTween;
+    public bool isActive = true;
 
     void Start()
     {
@@ -22,6 +23,9 @@ public class MovingPlatform : MonoBehaviour
 
     void MoveToNextWaypoint()
     {
+        // Only execute if isActive is true
+        if (!isActive) return;
+
         if (waypoints.Count == 0) return;
 
         Transform targetWaypoint = waypoints[currentWaypointIndex];
@@ -38,19 +42,17 @@ public class MovingPlatform : MonoBehaviour
                 {
                     direction = -1; // Move backward
                 }
+                currentWaypointIndex += direction; // Move to the next or previous waypoint
             }
             else if (movementType == MovementType.Repeat)
             {
                 currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
-                return; // Skip the next line for Repeat movement type
             }
-
-            currentWaypointIndex += direction; // Move to the next or previous waypoint
 
             StartCoroutine(WaitAtWaypoint(waypointDurations[currentWaypointIndex]));
         });
     }
-
+    
     IEnumerator WaitAtWaypoint(float duration)
     {
         yield return new WaitForSeconds(duration);

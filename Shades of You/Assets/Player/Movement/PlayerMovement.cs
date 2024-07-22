@@ -282,7 +282,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (_jumpBufferTimer > 0f && !_isJumping && (_isGrounded || _coyoteTimer > 0f))
         {
-            InitiateJump(1);
+            InitiateJump();
 
 
             if (_jumpReleaseDuringBuffer)
@@ -297,14 +297,14 @@ public class PlayerMovement : MonoBehaviour
         else if (_jumpBufferTimer > 0f && _isJumping && _numberOfJumpsUsed < MoveStats.NumberOfJumpsAllowed)
         {
             _isFastFalling = false;
-            InitiateJump(1);
+            InitiateJump();
         }
 
         // AIR JUMP after COYOTE TIME LAPSED
 
         else if (_jumpBufferTimer > 0f && _isFalling && _numberOfJumpsUsed < MoveStats.NumberOfJumpsAllowed - 1)
         {
-            InitiateJump(2);
+            InitiateJump();
             _isFastFalling = false;
         }
 
@@ -324,7 +324,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void InitiateJump(int _numberOfJumpsUsed)
+    private void InitiateJump()
     {
         if (!_isJumping)
         {
@@ -332,7 +332,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         _jumpBufferTimer = 0f;
-        _numberOfJumpsUsed += _numberOfJumpsUsed;
+        _numberOfJumpsUsed++;
         VerticalVelocity = MoveStats.InitialJumpvelocity;
     }
 
