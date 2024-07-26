@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     public enum activeCharacter { Blake, Iara, SooYeon, Xesus }
     public static activeCharacter ActiveCharacter { get; set; }
 
+    private bool isNearNPC = false;
+    private NPCDialogue npcDialogue;
 
     [Header("Respawn Time")]
     [SerializeField] private float respawnDelay = 2f;
@@ -35,9 +37,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (InputManager.InteractWasPressed)
+        if (InputManager.InteractWasPressed && isNearNPC)
         {
-            Interact();
+            npcDialogue.Interact();
         }    
     }
 
@@ -83,21 +85,24 @@ public class Player : MonoBehaviour
         health = 100f;
     }
 
-    public void Interact()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.transform.position, mousePosition - (Vector2)Camera.main.transform.position);
-    
-        if (hit.collider != null && hit.collider.CompareTag("NPC"))
+        if (collision.gameObject.CompareTag("NPC"))
         {
-            NPCDialogue npcDialogue = hit.collider.GetComponent<NPCDialogue>();
-            if (npcDialogue != null)
-            {
-                npcDialogue.Interact();
-            }
+            isNearNPC = true;
+            npcDialogue = collision.GetComponent<NPCDialogue>();
         }
-        
-        
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("NPC"))
+        {
+            isNearNPC = false;
+            npcDialogue = null;
+
+            DialogueManager.Instance.EndDialogue();
+        }
+    }
+
 }

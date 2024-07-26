@@ -56,12 +56,24 @@ public class DialogueUIController : MonoBehaviour
         }
     }
 
-    public void ShowNextDialoguePart(DialogueLine dialogueLine)
+    public void ShowNextDialoguePart()
     {
-        if (currentDialogueLine.continuation != null)
+        if (currentDialogueLine == null)
         {
-            ShowCharacterDialogue(currentDialogueLine.continuation);
-        }    
+            Debug.Log("No continuation for current dialogue line");
+            return;
+        }
+
+        if (currentDialogueLine.dialogueType == DialogueLine.DialogueType.Dialogue)
+        {
+            Debug.Log("Dialogue UI Controller - ShowNextDialoguePart called for Dialogue Type");
+            ShowCharacterDialogue(currentDialogueLine);
+        }
+        else if (currentDialogueLine.dialogueType == DialogueLine.DialogueType.Choice)
+        {
+            Debug.Log("Dialogue UI Controller - ShowNextDialoguePart called for Choice Type");
+            ShowChoiceDialogue(currentDialogueLine);
+        }
     }
 
     public bool IsDialogueFinished()
@@ -73,6 +85,8 @@ public class DialogueUIController : MonoBehaviour
     {
         currentDialogueLine = dialogueLine;
 
+        HideDialogueForChoice();
+
         // Loop through each choice in the dialogue line
         for (int i = 0; i < dialogueLine.choices.Length; i++)
         {
@@ -83,7 +97,10 @@ public class DialogueUIController : MonoBehaviour
             Button choiceButton = choiceBoxes[i].GetComponent<Button>();
 
             // Set the button text to the choice text
-            choiceButton.GetComponentInChildren<Text>().text = dialogueLine.choices[i].text;
+            choiceButton.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = dialogueLine.choices[i].text;
+
+            // Remove all listeners from the button to avoid duplicate listeners
+            choiceButton.onClick.RemoveAllListeners();
 
             // Add a listener to the button click event
             choiceButton.onClick.AddListener(() => ChoiceSelected(i));
@@ -101,26 +118,29 @@ public class DialogueUIController : MonoBehaviour
         // Get the selected choice
         DialogueLine.Choice selectedChoice = currentDialogueLine.choices[choiceIndex];
 
-        // Check if the choice has a continuation
-        if (selectedChoice.continuation != null)
-        {
-            // Check the type of the continuation
-            if (selectedChoice.continuation.dialogueType == DialogueLine.DialogueType.Dialogue)
-            {
-                // Show the continuation as a character dialogue
-                ShowCharacterDialogue(selectedChoice.continuation);
-            }
-            else if (selectedChoice.continuation.dialogueType == DialogueLine.DialogueType.Choice)
-            {
-                // Show the continuation as a choice dialogue
-                ShowChoiceDialogue(selectedChoice.continuation);
-            }
-        }
-        else
-        {
-            // Hide the dialogue UI if there's no continuation
-            HideDialogueUI();
-        }
+        // Set currentDialogueLine to the continuation of the selected choice
+        currentDialogueLine = selectedChoice.continuation;
+
+        // Hide the choice boxes
+        HideChoicesAfterSelection();
+
+        // Call ShowNextDialoguePart to show the continuation
+        ShowNextDialoguePart();
+    }
+
+    public void ShowWholeDialogue(string dialogue)
+    {
+        dialogueBoxText.text = dialogue;
+    }
+
+    public void ClearDialogueText()
+    {
+        dialogueBoxText.text = "";
+    }
+
+    public void AppendDialogueText(char letter)
+    {
+        dialogueBoxText.text += letter;
     }
 
     public void HideDialogueUI()
@@ -136,16 +156,20 @@ public class DialogueUIController : MonoBehaviour
         }
     }
 
-    public void HideDialogueUIInstant()
+    public void HideDialogueForChoice()
     {
         dialogueBox.SetActive(false);
         dialogueName.SetActive(false);
         portrait.SetActive(false);
+    }
 
-        // Hide the choice boxes
+    public void HideChoicesAfterSelection()
+    {
         foreach (GameObject choiceBox in choiceBoxes)
         {
             choiceBox.SetActive(false);
         }
+    
+        ActivateDialogue();
     }
 }
