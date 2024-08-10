@@ -13,11 +13,14 @@ public class InputManager : MonoBehaviour
     public static bool JumpWasReleased;
     public static bool RunIsHeld;
     public static bool InteractWasPressed;
+    public static bool AbilityWasPressed;
+    public static bool AbilityIsHeld;
 
     private InputAction _moveAction;
     private InputAction _jumpAction;
     private InputAction _runAction;
     private InputAction _interactAction;
+    private InputAction _abilityAction;
 
     private void Awake()
     {
@@ -27,6 +30,7 @@ public class InputManager : MonoBehaviour
         _jumpAction = PlayerInput.actions["Jump"];
         _runAction = PlayerInput.actions["Run"];
         _interactAction = PlayerInput.actions["Interact"];
+        _abilityAction = PlayerInput.actions["Ability"];
     }
 
     // Update is called once per frame
@@ -41,6 +45,9 @@ public class InputManager : MonoBehaviour
         RunIsHeld = _runAction.IsPressed();
 
         InteractWasPressed = _interactAction.WasPressedThisFrame();
+
+        AbilityWasPressed = _abilityAction.WasPressedThisFrame();
+        AbilityIsHeld = _abilityAction.IsPressed();
 
     }
 }

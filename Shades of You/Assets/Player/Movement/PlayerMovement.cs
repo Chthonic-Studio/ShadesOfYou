@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Gameplay Variables")]
     public bool onPlatform;
     private bool wasOnPlatform;
+    public float fallSpeedModifier = 0f;
 
     [Header("Camera Follow")]
     public CameraFollow _cameraFollow;
@@ -434,7 +435,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Clamp fall speed
 
-        VerticalVelocity = Mathf.Clamp(VerticalVelocity, -MoveStats.MaxFallSpeed, 50f);
+        VerticalVelocity = Mathf.Clamp(VerticalVelocity, -(MoveStats.MaxFallSpeed + fallSpeedModifier), 50f);
         _rb.velocity = new Vector2(_rb.velocity.x, VerticalVelocity);
 
     }
